@@ -1,17 +1,31 @@
 <!doctype html>
 <html lang="en" dir="ltr">
         <head>
-                <meta http-equiv="Content-Type"
-                content="text/html; charset=utf-8" />
+                <meta charset="utf-8" />
                 <meta name="language" content="en" />
 
                 <title>Baptiste Fontaine</title>
+                <style>
+                        a[hreflang]:after {
+                                content:' ('attr(hreflang)')';
+                                text-transform:uppercase;
+                                color:black;
+                        }
+                </style>
         </head>
         <body>
-                <p>Description soon…</p>
+                <p itemscope itemtype="http://schema.org/Person">Hello, my name is <span itemprop="givenName">Baptiste</span> <span itemprop="familyName">Fontaine</span>, I'm a <span itemprop="nationality">French</span> <span itemprop="jobTitle">IT Student</span>. Here are my projects on Github.</p>
                 <h3>Projects</h3>
                 <ul>
-                        <li><a href="Boudou/">Boudou JS Framework</a></li>
+                        <li itemscope itemtype="http://schema.org/CreativeWork"><a itemprop="name" href="Boudou/">Boudou JS Framework</a></li>
+                        <li itemscope itemtype="http://schema.org/CreativeWork"><a itemprop="name" href="https://github.com/bfontaine/TicTac">TicTac</a>, <span itemprop="description">a bash cooking timer</span></li>
+                        <li itemscope itemtype="http://schema.org/CreativeWork"><a itemprop="name" href="https://github.com/bfontaine/up7-optimization">UP7 Optimization</a> (stopped)</li>
+                </ul>
+                <h3>See Also</h3>
+                <ul>
+                        <li><a href="https://twitter.com/dadbs">Twitter Account</a></li>
+                        <li><a href="http://bfontaine.net" hreflang="fr">Personal Website</a></li>
+                        <li><a href="http://labs.bfontaine.net" hreflang="fr">More projects</a></li>
                 </ul>
         </body>
 </html>
